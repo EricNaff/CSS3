@@ -1,0 +1,164 @@
+@charset "utf-8";
+/* CSS Document */
+/* Layout */
+* {
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+
+article.fbResults {
+	position:relative;
+	margin:10px;
+	padding:15px;
+	max-width:630px;
+	min-width::500px;
+	border:thin solid #CCC;
+	color:#999;
+	border-radius:4px;
+	height:220px;
+	overflow:hidden;
+	font-family:Arial, Helvetica, sans-serif;	
+	font-size:.85em;
+}
+
+/* Global Typesets */
+article.fbResults h6 {
+	font-weight:normal;	
+	font-family:Arial, Helvetica, sans-serif;
+}
+article.fbResults h6 a.fromName, article.fbResults h6 span.shareName {
+	font-weight:bold;	
+}
+article.fbResults a {
+	text-decoration:none;
+	color:#395A93;	
+}
+article.fbResults span.shareCaption, article.fbResults span.shareDescription {
+	color:#666;	
+}
+
+/* top section style */
+article.fbResults section.resultsSource .shareHeader {
+	
+}
+article.fbResults section.resultsSource img.fromUser {
+	float:left;	
+	padding-right:10px;
+	margin-top:-5px;
+}
+article.fbResults section.resultsSource {
+	border-bottom:thin solid #CCC;
+	height:60px;
+}
+article.fbResults section.resultsSource time.createdTime {
+		
+}
+article.fbResults section.resultsSource img.typeLinkIcon {
+	margin:0 0 -5px 0;	
+}
+
+/* Search Bar Styling- From Actual FB Search Bar- Inspect Element */
+.searchWrap {
+	background-color: #3B5C96;
+	width:100%;
+	min-width:400px;
+	height:40px;
+	margin:0% 0 2% 0;
+}
+
+a#FBlogo {
+	background-image:url("https://fbstatic-a.akamaihd.net/rsrc.php/v2/yl/r/MfoOYDu25V1.png");
+	background-repeat:no-repeat;
+	background-size:auto auto;
+	background-position:0px -151px;
+	display:block;
+	height:30px;
+	overflow:hidden;
+	text-indent:-999px;
+	margin:5px 0 0 2%;
+	width:105px;
+	float:left;
+	outline:medium none;
+	white-space:nowrap;
+	color:#FFF;
+}
+
+a#FBlogo:hover {
+	background-color:#06F;
+	transition:1s;
+}
+
+input.searchQuery {
+	width:320px;
+	height:25px;
+	border:1px none;
+	padding:2px 5px 1px 7px;
+	margin-top:7px;
+	margin-left:3em;
+	color:rgb(119, 119, 119);
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif
+	font-size:11px;
+	line-height:1.5;
+	text-align:left;
+	float:left;
+	direction:ltr;
+	outline:medium none;
+}
+input:focus {
+	color:black;	
+}
+
+button.startSearch {
+	background-image:url("https://fbstatic-a.akamaihd.net/rsrc.php/v2/yW/r/w8ex9wxPd2M.png"); /* Bring in image fromFB */
+	background-repeat:no-repeat;
+	background-size:auto auto;
+	background-position:-520px -23px;
+	background-color:rgb(255, 255, 255);
+	border:1px none;
+	cursor:pointer; /* Some change to indicate "clickable" */
+	display:block;
+	height:25px;
+	width:22px;	
+	margin:7px 0 0 -2px;
+	float:left;
+}
+
+/* bottom section style */
+article.fbResults section.resultsDescription {
+	clear:both;	
+	border:thin solid #CCC;
+	height:90px;
+	width:400px;
+	overflow:hidden;
+	margin:10px 0 0 0;
+	background-color:#EDEFF3;
+}
+article.fbResults section.resultsDescription img.sharePicture {
+	float:left;	
+	padding-right:10px;
+}
+article.fbResults iframe.linkShare {
+	position:absolute;
+	left:0;
+	bottom:0;
+	width:100%;
+	height:32px;
+	background-color:#EDEFF3;
+	padding:4px;	
+}
+article.fbResults section.resultsDescription .shareCaption, .shareDescription {
+	display:block;
+	
+}
+article.fbResults section.resultsDescription .shareDescription {
+	margin:2px 0 0 0;
+	height:40px;
+	overflow:hidden;	
+	line-height:1.3em;
+}
+article.fbResults section.resultsDescription .shareName {
+	display:block;
+	padding:2px 0 0 0;
+	font-weight:bold;	
+}
